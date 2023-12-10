@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "{{ .Values.name }}"
+  name: "{{ .Values.deployment.name }}"
 spec:
   replicas: 1
   selector:
@@ -19,4 +19,4 @@ spec:
         - containerPort: {{ .Values.deployment.container_port }}
         envFrom:
         - configMapRef:
-            name: "{{ .Values.name }}v2"
+            name: "{{ .Values.configMap.name }}"

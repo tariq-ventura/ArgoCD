@@ -1,15 +1,15 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: secure-kuber-master-vm-shop
+  name: "{{ .Values.certificate.name }}"
   namespace: default
 spec:
-  secretName: secure-kuber-master-vm-shop-tls
+  secretName: "{{ .Values.certificate.name }}"
   duration: 2160h # 90d
   renewBefore: 360h # 15d
   subject:
     organizations:
-      - kuber-master-vm-shop
+      - "{{ .Values.certificate.name }}"
   isCA: false
   privateKey:
     algorithm: RSA
@@ -21,6 +21,6 @@ spec:
   dnsNames:
     - {{ .Values.domain }}
   issuerRef:
-    name: letsencrypt-prod
+    name: "{{ .Values.issuer.name }}"
     kind: ClusterIssuer
     group: cert-manager.io
