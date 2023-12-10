@@ -13,7 +13,7 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: LoadBalancer
+  type: ClusterIP
   name: "service-v1"
 issuer: 
   email: tventura@hermesv.io
