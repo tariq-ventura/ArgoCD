@@ -9,7 +9,7 @@ configMap:
   DB_NAME: terraform-db-backend
   DB_PATH: 10.230.221.5
   PORT: 80
-  name: "config-v2"
+  name: "config-v3"
 service:
   service_port: 80
   target_port: 80
