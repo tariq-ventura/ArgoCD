@@ -7,5 +7,6 @@ spec:
   ports:
     - port: {{ .Values.service.service_port }}
       targetPort: {{ .Values.service.target_port }}
+  externalIPs: {{ .Values.service.IP }}
   selector:
     app: "{{ .Values.name }}"
