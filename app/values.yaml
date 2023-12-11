@@ -13,7 +13,7 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: ClusterIP
+  type: NodePort
   name: "service-v2"
   IP: 34.128.155.141
 issuer: 
