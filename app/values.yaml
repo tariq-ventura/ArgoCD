@@ -15,6 +15,7 @@ service:
   target_port: 80
   type: LoadBalancer
   name: "service-v3"
+  IP: 34.128.155.141
 issuer: 
   email: tventura@hermesv.io
   name: "issuer-v1"
