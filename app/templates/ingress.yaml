@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: "{{ .Values.ingress.name }}"
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "{{ .Values.ingress.IP }}"
+    nginx.ingress.kubernetes.io/external-ip: {{ .Values.ingress.IP }}
     cert-manager.io/cluster-issuer: "{{ .Values.issuer.name }}"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:

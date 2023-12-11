@@ -13,15 +13,15 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: NodePort
-  name: "service-v3"
+  type: ClusterIP
+  name: "service-v1"
 issuer: 
   email: tventura@hermesv.io
   name: "issuer-v1"
 certificate:
   name: "certificate-v1"
 ingress:
-  name: "ingress-v3"
-  IP: "kubernetes-ingress"
+  name: "ingress-v1"
+  IP: 34.128.155.141
 domain: backend-kuber.master-vm.shop
 name: "backend-terraform"

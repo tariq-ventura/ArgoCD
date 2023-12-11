@@ -9,4 +9,3 @@ spec:
       targetPort: {{ .Values.service.target_port }}
   selector:
     app: "{{ .Values.name }}"
-    tier: web
