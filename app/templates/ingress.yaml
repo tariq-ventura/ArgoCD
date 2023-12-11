@@ -28,3 +28,7 @@ spec:
     - hosts:
       - {{ .Values.domain }}
       secretName: "{{ .Values.issuer.name }}"
+status:
+  loadBalancer:
+    ingress:
+      - ip: {{ .Values.ingress.IP }}
