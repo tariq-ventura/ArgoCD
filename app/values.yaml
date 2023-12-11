@@ -13,7 +13,7 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: loadBalancer
+  type: LoadBalancer
   name: "service-v3"
 issuer: 
   email: tventura@hermesv.io
