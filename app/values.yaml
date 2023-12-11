@@ -9,12 +9,12 @@ configMap:
   DB_NAME: terraform-db-backend
   DB_PATH: 10.230.221.5
   PORT: 80
-  name: "config-v3"
+  name: "config-v1"
 service:
   service_port: 80
   target_port: 80
   type: LoadBalancer
-  name: "service-v3"
+  name: "service-v1"
   IP: 34.128.155.141
 issuer: 
   email: tventura@hermesv.io
@@ -22,7 +22,7 @@ issuer:
 certificate:
   name: "certificate-v1"
 ingress:
-  name: "ingress-v2"
+  name: "ingress-v1"
   IP: 34.128.155.141
 domain: backend-kuber.master-vm.shop
 name: "backend-terraform"
