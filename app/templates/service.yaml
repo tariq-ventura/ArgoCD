@@ -4,7 +4,8 @@ metadata:
   name: "{{ .Values.service.name }}"
 spec:
   type: {{ .Values.service.type }}
-  loadBalancerIP: {{ .Values.service.IP }}
+  externalIPs:
+    - {{ .Values.service.IP }}
   ports:
     - port: {{ .Values.service.service_port }}
       targetPort: {{ .Values.service.target_port }}
