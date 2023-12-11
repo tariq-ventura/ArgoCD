@@ -7,7 +7,6 @@ metadata:
     cert-manager.io/cluster-issuer: "{{ .Values.issuer.name }}"
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  loadBalancerIP: {{ .Values.service.IP }}
   ingressClassName: nginx
   rules:
   - host: {{ .Values.domain }}

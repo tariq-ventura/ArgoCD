@@ -13,8 +13,8 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: LoadBalancer
-  name: "service-v1"
+  type: ClusterIP
+  name: "service-v2"
   IP: 34.128.155.141
 issuer: 
   email: tventura@hermesv.io
@@ -22,7 +22,7 @@ issuer:
 certificate:
   name: "certificate-v1"
 ingress:
-  name: "ingress-v1"
+  name: "ingress-v2"
   IP: 34.128.155.141
 domain: backend-kuber.master-vm.shop
 name: "backend-terraform"
