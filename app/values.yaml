@@ -7,7 +7,7 @@ configMap:
   DB_USER: root
   DB_PASSWORD: "12345678"
   DB_NAME: terraform-db-backend
-  DB_PATH: 10.191.0.3
+  DB_PATH: 10.230.221.5
   PORT: 80
   name: "config-v2"
 service:
