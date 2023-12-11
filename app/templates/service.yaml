@@ -3,9 +3,14 @@ kind: Service
 metadata:
   name: "{{ .Values.service.name }}"
 spec:
+  clusterIP: 10.3.5.187
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.service_port }}
       targetPort: {{ .Values.service.target_port }}
   selector:
     app: "{{ .Values.name }}"
+status:
+ loadBalancer:
+    ingress:
+      - ip: {{ .Values.service.IP }}

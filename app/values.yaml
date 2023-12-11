@@ -13,7 +13,7 @@ configMap:
 service:
   service_port: 80
   target_port: 80
-  type: ClusterIP
+  type: LoadBalancer
   name: "service-v1"
   IP: 34.128.155.141
 issuer: 
