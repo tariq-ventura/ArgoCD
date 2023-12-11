@@ -6,7 +6,6 @@ metadata:
     cert-manager.io/cluster-issuer: "{{ .Values.issuer.name }}"
     nginx.ingress.kubernetes.io/rewrite-target: /
     kubernetes.io/ingress.regional-static-ip-name: "{{ .Values.ingress.ip }}"
-    kubernetes.io/ingress.class: "gce-internal"
 spec:
   ingressClassName: nginx
   rules:
@@ -27,5 +26,5 @@ spec:
         number: 80
   tls:
     - hosts:
-      -   {{ .Values.domain }}
+      - {{ .Values.domain }}
       secretName: "{{ .Values.issuer.name }}"

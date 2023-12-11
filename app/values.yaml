@@ -21,7 +21,7 @@ issuer:
 certificate:
   name: "certificate-v1"
 ingress:
-  name: "ingress-v1"
+  name: "ingress-v2"
   ip: "ingress-address"
 domain: backend-kuber.master-vm.shop
 name: "backend-terraform"
