@@ -5,7 +5,7 @@ deployment:
   name: "deployment-v1"
 configMap:
   DB_USER: root
-  DB_PASSWORD: 12345678
+  DB_PASSWORD: "12345678"
   DB_NAME: terraform-db-backend
   DB_PATH: 10.191.0.3
   PORT: 80
