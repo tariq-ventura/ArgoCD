@@ -18,11 +18,11 @@ service:
   IP: 34.128.155.141
 issuer: 
   email: tventura@hermesv.io
-  name: "issuer-v1"
+  name: "issuer-v2"
 certificate:
-  name: "certificate-v1"
+  name: "certificate-v2"
 ingress:
-  name: "ingress-v2"
+  name: "ingress-v3"
   IP: 34.128.155.141
-domain: backend-kuber.master-vm.shop
+domain: terraform-backend.master-vm.shop
 name: "backend-terraform"
