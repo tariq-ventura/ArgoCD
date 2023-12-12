@@ -2,14 +2,14 @@ deployment:
   image: "us-central1-docker.pkg.dev/molten-unison-401314/terraform-images/backend-terraform"
   tag: 20657d72c94c46a0c97b1cb735dae31b7ba266f4
   container_port: 80
-  name: "deployment-v1"
+  name: "deployment-v2"
 configMap:
   DB_USER: root
   DB_PASSWORD: "12345678"
   DB_NAME: terraform-db-backend
-  DB_PATH: 10.230.221.5
+  DB_PATH: 10.39.0.3
   PORT: 80
-  name: "config-v1"
+  name: "config-v2"
 service:
   service_port: 80
   target_port: 80
