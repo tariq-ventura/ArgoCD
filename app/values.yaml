@@ -1,6 +1,6 @@
 deployment:
   image: "us-central1-docker.pkg.dev/molten-unison-401314/terraform-images/backend-terraform"
-  tag: 105fd43792434e06787b977a7197ec5923b3b779
+  tag: 20657d72c94c46a0c97b1cb735dae31b7ba266f4
   container_port: 80
   name: "deployment-v1"
 configMap:
